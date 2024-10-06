@@ -90,5 +90,17 @@ section{
     line-height: 1em;
 }
 
+.followers{
+    padding: 1em 3em;
+    color: white;
+    background-color: hsl(256, 67%, 59%);
+    text-align: center;
+}
+.followers h2{
+    margin: .5em 0 0;
+    line-height: 1em;
+    font-weight: 500;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
