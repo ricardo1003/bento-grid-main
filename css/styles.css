@@ -117,5 +117,20 @@ section{
     font-size: .5em;
 }
 
+.createContent{
+    padding: 1em 2em;
+    background-color: hsl(31, 66%, 93%);
+}
+.createContent h2{
+    font-weight: 500;
+    line-height: .75em;
+}
+.createContent h2 i{
+    color: hsl(256, 67%, 59%);
+}
+.createContent img{
+    width: 175px;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
