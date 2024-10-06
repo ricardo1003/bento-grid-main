@@ -13,8 +13,12 @@ body{
     font-weight: 400;
 }
 main{
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 1em;
     display: grid;
+    grid-template-columns: repeat(auto-fill, 210.5px);
+    grid-template-rows: repeat(6, 100px);
     gap: 1em;
 }
 section{
@@ -27,13 +31,16 @@ section{
 
 .socialMedia{
     padding: 1em;
+    grid-column: span 2;
+    grid-row: span 2;
     background-color: hsl(256, 67%, 59%);
     color: white;
     text-align: center;
 
 }
+
 .socialMedia h1{
-    margin: 25px 0;
+    margin: 10px 0 25px;
     font-size: 2.7em;
     font-weight: 500;
     line-height: .8em;
@@ -50,7 +57,15 @@ section{
 
 .accounts{
     padding: 1em;
+    grid-row: span 2;
     background-color: white;
+}
+.accounts .image{
+    overflow-x: hidden;
+}
+.accounts img{
+    max-width: none;
+    width: 237px;
 }
 .accounts h2{
     margin: 10px 0 0;
@@ -59,9 +74,13 @@ section{
 }
 
 .consistentSchedule{
-    padding: 1em 1em 7.5em;
+    padding: 1em 1em 5em;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: hsl(39, 100%, 71%);
+    grid-row: span 2;
     overflow: hidden;
 }
 .consistentSchedule h2{
@@ -71,12 +90,15 @@ section{
     font-weight: 500;
 }
 .consistentSchedule img{
-    width: 11em;
+    width: 10em;
     position: absolute;
+    bottom: -60px;
 }
 
 .socialSchedule{
     padding: 1em;
+    grid-column: 4/5;
+    grid-row: 1/5;
     background-color: hsl(254, 88%, 90%);
     text-align: center;
 }
@@ -91,19 +113,28 @@ section{
 }
 
 .followers{
-    padding: 1em 3em;
+    display: flex;
+    gap: 10px;
+    padding: 1em 2em;
+    grid-column: span 2;
+    grid-row: span 2;
     color: white;
     background-color: hsl(256, 67%, 59%);
-    text-align: center;
+    align-items: center;
+}
+.followers img{
+    max-height: 100%;
 }
 .followers h2{
-    margin: .5em 0 0;
+    margin: 0;
     line-height: 1em;
     font-weight: 500;
 }
 
 .audience{
     padding: 1em;
+    grid-column: 2/3;
+    grid-row: 5/7;
     background-color: white;
 }
 .audience h2{
@@ -119,6 +150,8 @@ section{
 
 .createContent{
     padding: 1em 2em;
+    grid-column: 1/2;
+    grid-row: 1/4;
     background-color: hsl(31, 66%, 93%);
 }
 .createContent h2{
@@ -134,6 +167,8 @@ section{
 
 .writeContent{
     padding: 1em;
+    grid-column: 1/2;
+    grid-row: 4/7;
     background-color: hsl(39, 100%, 71%);
 }
 .writeContent h2{
