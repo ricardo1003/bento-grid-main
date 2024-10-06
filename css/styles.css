@@ -8,6 +8,7 @@ img{
 body{
     min-height: 100vh;
     margin: 0;
+    background-color: hsl(0, 0%, 96%);
     font-size: 18px;
     font-weight: 400;
 }
@@ -16,17 +17,20 @@ main{
     display: grid;
     gap: 1em;
 }
-.socialMedia{
-    padding: 1em;
+section{
     border-radius: 10px;
-    background-color: hsl(256, 67%, 59%);
-    color: white;
-    text-align: center;
-
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+
+.socialMedia{
+    padding: 1em;
+    background-color: hsl(256, 67%, 59%);
+    color: white;
+    text-align: center;
+
 }
 .socialMedia h1{
     margin: 25px 0;
@@ -43,6 +47,17 @@ main{
 .socialMedia p{
     margin: 0 0 1em;
 }
+
+.accounts{
+    padding: 1em;
+    background-color: white;
+}
+.accounts h2{
+    margin: 10px 0 0;
+    font-size: 1.25em;
+    line-height: .9em;
+}
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
