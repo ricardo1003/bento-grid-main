@@ -58,6 +58,22 @@ section{
     line-height: .9em;
 }
 
+.consistentSchedule{
+    position: relative;
+    background-color: hsl(39, 100%, 71%);
+    padding: 1em 1em 7.5em;
+    overflow: hidden;
+}
+.consistentSchedule h2{
+    margin: 0 0 .75em;
+    line-height: .9em;
+    letter-spacing: -2px;
+    font-weight: 500;
+}
+.consistentSchedule img{
+    position: absolute;
+    width: 11em;
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
