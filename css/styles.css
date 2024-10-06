@@ -59,9 +59,9 @@ section{
 }
 
 .consistentSchedule{
+    padding: 1em 1em 7.5em;
     position: relative;
     background-color: hsl(39, 100%, 71%);
-    padding: 1em 1em 7.5em;
     overflow: hidden;
 }
 .consistentSchedule h2{
@@ -71,8 +71,23 @@ section{
     font-weight: 500;
 }
 .consistentSchedule img{
-    position: absolute;
     width: 11em;
+    position: absolute;
+}
+
+.socialSchedule{
+    padding: 1em;
+    background-color: hsl(254, 88%, 90%);
+    text-align: center;
+}
+.socialSchedule h2{
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+}
+.socialSchedule p{
+    font-size: 1.0625em;
+    line-height: 1em;
 }
 
 .attribution { font-size: 11px; text-align: center; }
