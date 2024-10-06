@@ -132,5 +132,17 @@ section{
     width: 175px;
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.writeContent{
+    padding: 1em;
+    background-color: hsl(39, 100%, 71%);
+}
+.writeContent h2{
+    margin-top: .25em;
+    line-height: .8em;
+    font-weight: 500;
+}
+.writeContent img{
+    width: 212.5px;
+}
+.attribution { font-size: 11px; text-align: center; position: fixed; bottom: 0; left: 0; right: 0; backdrop-filter: blur(10px);}
 .attribution a { color: hsl(228, 45%, 44%); }
