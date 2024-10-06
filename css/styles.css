@@ -102,5 +102,20 @@ section{
     font-weight: 500;
 }
 
+.audience{
+    padding: 1em;
+    background-color: white;
+}
+.audience h2{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    font-weight: 500;
+}
+.audience h2 span{
+    font-size: .5em;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
