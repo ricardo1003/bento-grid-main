@@ -8,17 +8,20 @@ img{
 body{
     min-height: 100vh;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: hsl(0, 0%, 96%);
     font-size: 18px;
     font-weight: 400;
 }
 main{
+    justify-content: center;
     max-width: 1000px;
-    margin: 0 auto;
     padding: 1em;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 210.5px);
-    grid-template-rows: repeat(6, 100px);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 210.5px));
+    grid-template-rows: repeat(8, 100px);
     gap: 1em;
 }
 section{
@@ -36,7 +39,6 @@ section{
     background-color: hsl(256, 67%, 59%);
     color: white;
     text-align: center;
-
 }
 
 .socialMedia h1{
@@ -133,7 +135,6 @@ section{
 
 .audience{
     padding: 1em;
-    grid-column: 2/3;
     grid-row: 5/7;
     background-color: white;
 }
@@ -181,3 +182,85 @@ section{
 }
 .attribution { font-size: 11px; text-align: center; position: fixed; bottom: 0; left: 0; right: 0; backdrop-filter: blur(10px);}
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width:851px){
+    .accounts{
+        grid-column: 1/2;
+    }
+    .consistentSchedule{
+        grid-column: 3/4;
+        grid-row: 5/7;
+    }
+    .socialSchedule{
+        grid-column: 3/4;
+    }
+    .followers{
+        flex-direction: column;
+        grid-row: 7/10;
+    }
+    .followers img{
+        width: 65%;
+    }
+
+    .createContent{
+        grid-column: 2/3;
+        grid-row: 3/7;
+    }
+    .writeContent{
+        grid-row: 7/10;
+    }
+}
+@media only screen and (max-width: 653px){
+    .socialMedia h1{
+        margin-bottom: 0;
+    }
+    .consistentSchedule{
+        grid-column: 2/3;
+        grid-row: 3/5;
+    }
+    .socialSchedule{
+        grid-column: 1/3;
+        grid-row: 5/9;
+    }
+    .socialSchedule img{
+        width: 70%;
+    }
+    .followers{
+        grid-column: 1/3;
+        grid-row: 9/11;
+    }
+    .audience{
+        grid-row: 11/13;
+    }
+    .writeContent{
+        grid-column: 2/3;
+        grid-row: 11/13;
+    }
+    .createContent{
+        grid-column: 1/3;
+        grid-row: 13/15;
+    }
+}
+@media only screen and (max-width: 426px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .accounts .image{
+        display: flex;
+        justify-content: center;
+    }
+    .consistentSchedule{
+        padding: 1em 1em 5em;
+    }
+    .consistentSchedule img{
+        left: 1em;
+        bottom: -2em;
+    }
+    .socialSchedule img{
+        width: 100%;
+    }
+    .audience img{
+        width: 212.15px;
+    }
+}
